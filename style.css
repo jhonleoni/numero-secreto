@@ -1,8 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap');:root {
-    --font-family: 'Montserrat', sans-serif;
-    --primary-color: #F4F9F4;
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
+:root {
+    --font-primaria: 'Roboto Slab', serif;
+    --font-secundaria: 'Inconsolata', monospace;
+    --primary-color: #7ECA9C;
+    --secondary-color: #CCFFBD;
     --primary-color-hover: #71817aa8;
-    --back-color: #74B49B;
+    --back-color: #1C1427;
 }
 
 body {
@@ -15,20 +20,32 @@ body {
     justify-content: center;
     text-align: center;
     margin: 0;
-    font-family: var(--font-family);
+    font-family: var(--font-primaria);
 }
 
 h1 {
-    font-size: 5em;
-}
-
-h2 {
+    margin-top: 1em;
     font-size: 4em;
+    color: var(--secondary-color);
+    border-radius: 10px;
+}
+.h1-index {
+    filter: drop-shadow(0 0 0.4em rgba(229, 229, 229, 0.403));
+    box-shadow: 2px 5px 5px rgba(255, 109, 109, 0.23);
 }
 
 h3 {
-    font-size: 2em;
-    margin-top: 20px;
+    font-size: 1.5em;
+}
+
+p {
+    font-family: var(--font-secundaria);
+    font-size: .9em;
+    margin-bottom: 3em;
+}
+
+.imagem {
+margin-bottom: 5em;
 }
 
 .mensagem {
@@ -46,13 +63,56 @@ h3 {
 }
 
 .btn-jogar {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1.3em;
     padding: 10px 17px;
     border: 0;
-    background: var(--primary-color);
+    background: var(--secondary-color);
     border-radius: 13px;
-    margin-top: 10em;
+    margin: 1.5em;
+    filter: drop-shadow(0 0 0.4em rgba(229, 229, 229, 0.693));
+    box-shadow: 2px 5px 5px rgba(255, 109, 109, 0.693);
 }
 .btn-jogar:hover {
-    background: var(--primary-color-hover);
+    opacity: 0.7;
+    -xpedu-transform: scale(1.06);
+        -ms-transform: scale(1.06);
+        transform: scale(1.06);
+        filter: drop-shadow(0 0 0.4em rgba(229, 229, 229, 0.428));
+        box-shadow: 2px 4px 4px rgba(255, 109, 109, 0.459);
+        cursor: pointer;
+}
+
+.voce-acertou {
+    margin: 6em;
+}
+
+.voce-acertou > h2 {
+font-size: 3em;
+}
+.footer {
+    font-size: .8em;
+    margin-top: 8em;
+    margin-bottom: 0px;
+}
+@media screen and (max-width: 700px){
+    body{
+        padding: 0 20px;
+    }
+
+    h1{
+        font-size: 2em;
+    }
+
+    h3{
+        font-size: 1.5em;
+    }
+
+    h4{
+        font-size: 1em;
+    }
+
+    .box{
+        font-size: 2em;
+    }
 }

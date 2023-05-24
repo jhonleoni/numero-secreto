@@ -4,9 +4,24 @@ function verificaValor() {
     if(chuteInvalido(numero)) {
         elementoChute.innerHTML += '<div>Valor inválido</div>'
 
-        return
     }
-    
+
+    /*if (chuteInvalido(numero)) {
+        if (chute.toUpperCase() === "GAME OVER") {
+
+            document.body.innerHTML =
+                `
+                <h2>Game Over!!!</h2>
+                <h3>Pressione o botão para jogar novamente</h3>
+                <button id="jogar-novamente" class="btn-jogar">Jogar novamente</button>
+                `
+                document.body.style.backgroundColor = "black";
+        } else {
+
+            elementoChute.innerHTML += '<div>Valor Inválido</div>';
+        }
+    }*/
+
     if(numeroMaiorOuMenor(numero)) {
         elementoChute.innerHTML += `<div>Valor inválido: Você precisa
         chutar um número entre ${menorValor} e ${maiorValor}</div>`
@@ -14,13 +29,16 @@ function verificaValor() {
         return
     }
 
+
     if(numero === numeroSecreto) {
+        
         document.body.innerHTML = `
-        <h2>Você acertou. Parabéns!</h2>
+        <div class="voce-acertou"><h2>Você acertou. Parabéns!</h2>
         <h3>O número secreto era ${numeroSecreto}</h3>
 
-        <button id="jogar-novamente" class="btn-jogar">Jogar novamente</button>
+        <button id="jogar-novamente" class="btn-jogar">Jogar novamente</button></div>
         `
+        startConfetti()
     } else if (numero > numeroSecreto) {
         elementoChute.innerHTML += `
         <div>O número secreto é menor 
