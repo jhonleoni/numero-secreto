@@ -8,5 +8,6 @@
 * API de reconhecimento de voz
 
 ## Screenshots
-![Screenshot da tela inicial do jogo](https://i.ibb.co/dKksps0/Screenshot-3.png)
-![Screenshot da tela do jogo](https://i.ibb.co/z4Nbvyq/Screenshot-4.png)
+![Screenshot da tela inicial do jogo](https://i.ibb.co/wgqFVVb/Screenshot-5.png)
+![Screenshot da tela do jogo](https://i.ibb.co/SN4pkZ4/Screenshot-6.png)
+![Screenshot da tela de vitória do jogo](https://i.ibb.co/KqCzxQ9/Screenshot-7.png)
