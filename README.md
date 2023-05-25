@@ -1,5 +1,5 @@
 # numero-secreto
- Um jogo onde você tem que acertar o número secreto gerado pela máquina
+ Um jogo onde a máquina gera um número aleatório e você tem que tentar acertá-lo por meio de comandos de voz. A cada chute você recebe dicas para tentar chegar mais perto do número secreto, até acertar.
 
 ## Tecnologias utilizadas no projeto
 * HTML
