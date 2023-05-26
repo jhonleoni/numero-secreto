@@ -16,11 +16,6 @@ function onSpeak(e) {
     chute = e.results[0][0].transcript
     exibeChuteNaTela(chute)
     verificaValor(chute)
-    if (chute == "cinco") {
-      chute = 5
-    } else if (chute == "nove") {
-      chute = 9
-    }
 console.log(chute)
 }
 
